@@ -1,0 +1,32 @@
+# calculator using match case..
+n1=int(input("Enter a first  number :"))
+n2=int(input("Enter second number:"))
+op=input("select an operator(+,-,*,/):")
+
+
+match op:
+   case "+":
+        # code
+        result=n1+n2
+        print("Addition =",result)
+   case "-":
+        # code
+        result=n1-n2
+        print("subtraction =",result)
+   case "*":
+        # code
+        result=n1*n2
+        print("multiplication =",result)
+   case "/":
+        #  code
+        if n2 != 0:
+            result = n1 / n2
+            print("Division =", result)
+        else:
+            print("Cannot divide by zero!")
+
+   case _:
+    	# default code
+    	print("Invalid Operator!")
+    	
+ 
